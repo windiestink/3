@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WindieStink Overlay</title>
+    <style>
+        @font-face {
+            font-family: 'Asgaard';
+            src: url('Asgaard-Full.otf') format('opentype');
+        }
+
+        body {
+            margin: 0;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .ticker-wrapper {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 60px;
+        }
+
+        .ticker-track {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: scroll-left 15s linear infinite;
+            font-family: 'Asgaard', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #0032FF;
+            letter-spacing: 8px;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticker-wrapper">
+        <div class="ticker-track">
+            NEWEST FOLLOWER&nbsp;&nbsp;&nbsp;&nbsp;NEWEST SUB&nbsp;&nbsp;&nbsp;&nbsp;LATEST CHEER&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</body>
+</html>
