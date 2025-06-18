@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WindieStink Ticker Live</title>
+    <style>
+        @font-face {
+            font-family: 'Asgaard';
+            src: url('Asgaard-Full.otf') format('opentype');
+        }
+
+        body {
+            margin: 0;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .ticker-wrapper {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 100px;
+        }
+
+        .ticker-track {
+            white-space: nowrap;
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-left 25s linear infinite;
+            font-family: 'Asgaard', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #0032FF;
+            letter-spacing: 6px;
+        }
+
+        .iframe-box {
+            display: inline-block;
+            margin: 0 200px;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticker-wrapper">
+        <div class="ticker-track">
+            <div class="iframe-box">
+                <div>LATEST FOLLOWER</div>
+            </div>
+            <div class="iframe-box">
+                <iframe src="https://streamlabs.com/widgets/media/v1/98FF3B4F7C1D441C4E5959DF016154FCD4BC63183BDC23EB27C793DF7CD91F01D6C52C4D68C293CD41E2A058A0D1D7660BB619602A7F327F7904722C75A16AF334BF47177DFD2554BEE0549FE78D9E585DB558E430BDAF8530B5F099B4CE3A741B288DF8006209960640487B57432239A9672B46510743B64B7CD8CAE7" width="320" height="60" style="border:0; background:transparent;"></iframe>
+            </div>
+            <div class="iframe-box">
+                <div>LATEST CHEER</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
